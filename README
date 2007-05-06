@@ -1,0 +1,79 @@
+edb
+------------------------------------------
+This is a database convenience library based on db 2.7.7.  It is 
+intended to make accessing database information portable, easy, fast and 
+efficient as well as bypass the problem of libdb continuously changing 
+formats.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  glib-1.2.10-3
+  gtk+-1.2.10-2
+  libncurses8-5.5-3
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.enlightenment.org/Libraries/Edb/
+
+Canonical download:
+  http://enlightenment.freedesktop.org/
+
+-------------------------------------------
+
+Build instructions:
+  unpack edb-1.0.5.007-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./edb-1.0.5.007-X.cygport all
+
+This will create:
+  /usr/src/edb-1.0.5.007-X-src.tar.bz2
+  /usr/src/edb-1.0.5.007-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(edb)
+  /usr/bin/edb_ed.exe
+  /usr/bin/edb_gtk_ed.exe
+  /usr/bin/edb_vt_ed.exe
+  /usr/share/doc/Cygwin/edb-1.0.5.007.README
+  /usr/share/doc/edb-1.0.5.007/AUTHORS
+  /usr/share/doc/edb-1.0.5.007/COPYING
+  /usr/share/doc/edb-1.0.5.007/README
+
+(libedb1)
+  /usr/bin/cygedb-1.dll
+
+(libedb-devel)
+  /usr/bin/edb-config
+  /usr/include/enlightenment/Edb.h
+  /usr/lib/libedb.a
+  /usr/lib/libedb.dll.a
+  /usr/lib/libedb.la
+  /usr/lib/pkgconfig/edb.pc
+
+------------------
+
+Port Notes:
+
+----- version 1.0.5.007-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

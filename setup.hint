@@ -1,0 +1,7 @@
+category: Database
+requires: cygwin libedb1 glib gtk+ libncurses8
+sdesc: "Enlightenment database library (editors)"
+ldesc: "This is a database convenience library based on db 2.7.7.  It is
+intended to make accessing database information portable, easy, fast and
+efficient as well as bypass the problem of libdb continuously changing
+formats."
