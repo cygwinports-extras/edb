@@ -1,0 +1,18 @@
+DESCRIPTION="Enlightenment database wrapper library"
+HOMEPAGE="http://www.enlightenment.org/Libraries/Edb/"
+SRC_URI="http://download.enlightenment.org/snapshots/2008-01-25/${P}.tar.gz"
+
+abi=1
+
+PKG_NAMES="${PN} lib${PN}1 lib${PN}-devel"
+PKG_HINTS="setup lib devel"
+PKG_CONTENTS[0]='usr/bin/*.exe usr/share/'
+PKG_CONTENTS[1]="usr/bin/cyg${PN}-${abi}.dll"
+PKG_CONTENTS[2]="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="
+	--includedir=/usr/include/enlightenment
+	--enable-compat185 --enable-dump185
+	--disable-gtk
+	--enable-ncurses
+"
